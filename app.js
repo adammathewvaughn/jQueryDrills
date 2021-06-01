@@ -29,8 +29,9 @@ $(function(){
             //             }
             
             // );
-            $('ul').append('<li>');
-            $('li').append($('input:text').val());
+            let newItem= $('<li></li>')
+            $('ul').append(newItem);
+            $(newItem).append($('input:text').val());
 
             $('li').click(function(){
                 //let randomColor= '#'+Math.floor(Math.random()*16777215).toString(16);
